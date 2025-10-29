@@ -1,0 +1,11 @@
+.btn {
+  padding: 5px 8px;
+  color: black;
+  border-radius: 10%;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: plum;
+  border-color: currentColor;
+}
