@@ -1,0 +1,15 @@
+.btn {
+  display: inline-flex;
+  gap: 20px;
+  margin-left: 40px;
+}
+.btn button {
+  background-color: none;
+  border: 1px solid #ddd;
+  border-radius: 40%;
+  padding: 2px 8px;
+}
+
+.btn button:hover {
+  background-color: aqua;
+}
