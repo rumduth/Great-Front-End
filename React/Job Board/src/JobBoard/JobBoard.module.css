@@ -1,0 +1,20 @@
+h1 {
+  color: orange;
+}
+
+.board {
+  padding: 0px 20px;
+}
+
+.btn {
+  background-color: orangered;
+  padding: 6px 8px;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 10%;
+}
+
+.btn:hover {
+  background-color: orange;
+  color: black;
+}
