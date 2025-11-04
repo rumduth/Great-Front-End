@@ -1,0 +1,37 @@
+.tik-tak-toe-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  height: 240px;
+  width: 240px;
+  background-color: wheat;
+}
+
+.grid + button {
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.grid + button:hover {
+  background-color: #455fbf;
+  color: white;
+}
+
+.grid-cell {
+  border: 1px solid #bfbfbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.grid-cell:hover:not(.filled-cell) {
+  background-color: #efefef;
+}
