@@ -6,15 +6,15 @@ const File = memo(function ({ item, marginLeft }) {
     setShowChildren((prev) => !prev);
   }, []);
   if (!item.children)
-    return <div style={{ marginLeft: `${marginLeft}px` }}>{item.name}</div>;
+    return <div style={{ marginLeft: `${marginLeft}px`, fontSize: '1rem' }}>{item.name}</div>;
   return (
     <div>
-      <h3 style={{ marginLeft: `${marginLeft}px` }}>
+      <h4 style={{ marginLeft: `${marginLeft}px`, cursor: 'pointer' }}  onClick={handleToggleShowChildren}>
         {item.name}{" "}
-        <span onClick={handleToggleShowChildren}>
+        <span>
           [{showChildren ? "-" : "+"}]
         </span>
-      </h3>
+      </h4>
       {showChildren &&
         item.children.map((item) => (
           <File item={item} key={item.id} marginLeft={marginLeft + 16} />
