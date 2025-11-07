@@ -1,0 +1,20 @@
+button {
+  background-color: blanchedalmond;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  padding: .4rem .5rem;
+}
+
+button:hover{
+  background-color: beige;
+}
+
+.second{
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.milliseconds{
+  margin-left: .4rem;
+}
